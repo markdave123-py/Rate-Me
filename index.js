@@ -1,13 +1,36 @@
-var btn1 = document.querySelector(".btn1");
-btn1.addEventListener('click',() =>{btn1.style.backgroundColor = "hsl(25, 97%, 53%)"})
-var btn2 = document.querySelector(".btn2");
-btn2.addEventListener('click',() =>{btn2.style.backgroundColor = "hsl(25, 97%, 53%)"})
-var btn3 = document.querySelector(".btn3");
-btn3.addEventListener('click',() =>{btn3.style.backgroundColor = "hsl(25, 97%, 53%)"})
-var btn4 = document.querySelector(".btn4");
-btn4.addEventListener('click',() =>{btn4.style.backgroundColor = "hsl(25, 97%, 53%)"})
-var btn5 = document.querySelector(".btn5");
-btn5.addEventListener('click',() =>{btn5.style.backgroundColor = "hsl(25, 97%, 53%)"})
+const btnList = document.getElementsByClassName("btn0");
+const btn1 = document.getElementsByClassName("btn1");
+const btn2 = document.getElementsByClassName("btn2");
+const btn3 = document.getElementsByClassName("btn3");
+const btn4 = document.getElementsByClassName("btn4");
+const btn5 = document.getElementsByClassName("btn5");
+
+function remove(){
+    for(var btn of btnList){
+        btn.classList.remove("btn0")
+    }
+}
+btn1.addEventListener("click",function(){
+    remove()
+    btnList[0].classList.add("btn0");
+})
+btn2.addEventListener("click",function() {
+    remove()
+    btnList[1].classList.add("btn0")
+})
+btn3.addEventListener("click",function() {
+    remove();
+    btnList[2].classList.add("btn0")
+})
+btn4.addEventListener("click",function() {
+    remove();
+    btnList[3].classList.add("btn0")
+})
+btn5.addEventListener("click",function() {
+    remove();
+    btnList[4].classList.add("btn0")
+})
+
 
 var container1 = document.createElement("div");
 container1.className = "container1";
