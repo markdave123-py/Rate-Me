@@ -1,0 +1,54 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.p{
+    color: hsl(216, 12%, 54%);
+}
+.container{
+    width: 320px;
+    margin-top: 200px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+    padding: 20px 10px 20px 20px;
+
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    transition-duration: 0.5s;
+
+    
+}
+.last-btn{
+    text-align: center;
+    padding-top: 20px;
+
+}
+.last:focus{
+    border: none;
+    outline: none;
+    outline: none !important;
+}
+.last{
+    width: 230px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+}
+.btn2, .btn1, .btn3, .btn4, .btn5{
+    background-color: hsl(213, 19%, 21%);
+    color: hsl(217, 12%, 63%);
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin-left: -25px;
+    border: none;
+}
