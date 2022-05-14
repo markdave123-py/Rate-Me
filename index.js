@@ -1,21 +1,21 @@
-const btnList = document.getElementsByClassName("btn0");
-const btn1 = document.getElementsByClassName("btn1");
-const btn2 = document.getElementsByClassName("btn2");
-const btn3 = document.getElementsByClassName("btn3");
-const btn4 = document.getElementsByClassName("btn4");
-const btn5 = document.getElementsByClassName("btn5");
+const btnList = document.getElementsByClassName("btn11");
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+const btn4 = document.getElementById("btn4");
+const btn5 = document.getElementById("btn5");
 
-function remove(){
-    for(var btn of btnList){
+function remove() {
+    for (let btn of btnList){
         btn.classList.remove("btn0")
     }
 }
-btn1.addEventListener("click",function(){
-    remove()
-    btnList[0].classList.add("btn0");
-})
+btn1.addEventListener("click",function() {
+        remove();
+        btnList[0].classList.add("btn0")
+    })
 btn2.addEventListener("click",function() {
-    remove()
+    remove();
     btnList[1].classList.add("btn0")
 })
 btn3.addEventListener("click",function() {
@@ -44,7 +44,7 @@ var img = document.createElement("img");
 img.src = "./images/illustration-thank-you.svg";
 image.appendChild(img);
 var para = document.createElement("p");
-para.textContent = `Your reply haave been sucessfully recorded.`;
+para.textContent = `Your reply have been sucessfully recorded.`;
 para.className = "select";
 p.appendChild(para);
 var h2 = document.createElement("h2");
@@ -79,5 +79,5 @@ p.style.paddingLeft = "50px"
 
 var button = document.querySelector(".last");
 button.addEventListener("click", () => {document.querySelector(".container").style.display = "none"})
-button.addEventListener("click",document.querySelector("body").appendChild(container1));
+button.addEventListener("click", () => {document.querySelector("body").appendChild(container1)});
 button.addEventListener("click", () => {container1.style.display = "block"});
